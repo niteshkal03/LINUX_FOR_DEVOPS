@@ -1,0 +1,30 @@
+A=Apps
+S=Services
+K=Kernel
+
+-Linux is a Open-Source Operating System Kernel created by Linus Torvalds.
+-It is the Foundation of many Operating system('distros', 'distributions')
+-like: Ubuntu, Centos, Red Hat, Debian and Alpine.
+
+Linux is free highly Customizable and designed for stability and performance and Secured.
+*Linux Features used in DevOps:
+1. Server & Infrastructure management
+2. Shell Scripting & Automation.
+3. Cintainerization (Docker and Kubernetes)
+4. CI/CD Pipelines
+5. Networking & Security.
+6. Monitoring & Logging
+
+Linux Commands:
+ls  ---normal listing of files and folder
+ls -a ----list hoidden file also 
+ls -lh ----list files with kb 
+touch  ----- file Creation 
+cat ----show content of file
+whoami ----user name 
+pwd ---present working directory
+mkdir -p name ---- 
+mkdir -p filder1/folder2/folde3 -----create folder into folder
+cd --
+vim ----open your file in vim editor -for insert content press: i
+     ----for save and close: ESC --> shift + :wq ----> enter
