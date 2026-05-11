@@ -28,3 +28,73 @@ mkdir -p filder1/folder2/folde3 -----create folder into folder
 cd --
 vim ----open your file in vim editor -for insert content press: i
      ----for save and close: ESC --> shift + :wq ----> enter
+
+======================================
+*********11th May 2026**********
+======================================
+
+Permission in Linux:
+     -In Linux, permission control who can read, write and execute files
+     and directories. These are the core part to system security.
+
+     1. Type of permissions:
+          each file/directory has 3 types of permissions:
+          read (r) -> view contents
+          write (w) -> modify contents
+          execute (x) -> run files/access directory
+     
+     2.Permissions Categories:
+          Permission are assigned into three groups:
+               -User (u) -> file owner
+               -group (g) -> group members
+               -others (o) -> Everyone else
+     
+     3. Permissions Categories:
+          -rwxr-xr--
+          owner : read, write, execute
+          group: read, execute
+          others: read
+     
+     4. Numeric Permissions (Octal):
+          -Each Permission has a number:
+          -r = 4
+          -w = 2
+          -x = 1
+
+          Add them:
+          rwx = 7
+          rw- = 6
+          r-x = 5
+          r-- = 4
+     5. Changing Permissions:
+          chmod u+x files.sh -> add execute for user
+          chmod g+w file.sh -> add write for group
+          chmod o=r file.sh -> set others for ready only
+
+     5. Changing Ownership:
+          *How Many User Available in system: 
+               -cat /etc/passwd
+          *for count users: 
+               -cat /etc/passwd | wc -l
+          *How many groups in system:
+          *for groups count: 
+               -cat /etc/group | wc -l     ===> (root:x:0)= user:password:id
+          *How to check groups of username:
+               -groups "username"
+
+          *How to Create User:
+               -sudo useradd new-username
+          *How to set Password
+               -sudo passwd new-username
+          *How to Create Group:
+               -sudo groupadd "groupname"
+          *How to Add in Group:
+               -sudo usermod -aG "groupname" "Username"
+          *How to Verify Username Add or Not in Groups:
+               -groups "username"
+          *How to Delete Users: 
+               -sudo userdel "username"
+          *How to Delete Groups:
+               -sudo groupdel "groupname"
+          *How to Remove User from Group:
+               -sudo gpasswd -d "groupname" "username"
