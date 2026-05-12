@@ -98,3 +98,34 @@ Permission in Linux:
                -sudo groupdel "groupname"
           *How to Remove User from Group:
                -sudo gpasswd -d "groupname" "username"
+
+==================12th May===================
+
+     -Linux Create same name group automatically for 
+      new user beacause it make permission management cleaner, 
+      safe and easier in mutli-server system.
+     -Linux Follow model name UPG (User Private Group)
+      Primary Group.
+     
+     *How to create admin new user with password:
+      -sudo adduser "Username"
+     *How to check Entry of Username:  
+      -getent passwd "Username"
+     *How to change Ownership:
+      -sudo chown "username" "filename"
+     *How to change group:
+      -sudo chgrp "groupname" "flename" 
+     *How to add user in group:
+      -sudo usermod -aG "groupname" "username"
+     *How to Refresh to added group(after add username in group we need to refresh it)
+      -newgrp "groupname"
+     *How to switch or change Username:
+      -sudo su - "username"
+     
+Searching Commands for File and Folder:
+     *How to file top 5 lines:
+     -head -5 "filename"
+     *How to find Bottom 5 lines:
+     -tail -5 "filename"
+     *How to check bottom live changes:
+     -tail -f "filename"
