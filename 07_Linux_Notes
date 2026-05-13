@@ -129,3 +129,20 @@ Searching Commands for File and Folder:
      -tail -5 "filename"
      *How to check bottom live changes:
      -tail -f "filename"
+/dev/null : is a spacial virtual device in Linux called null device.
+
+     -stdin : 0
+         -ls > /dev/null : hide normal output,   but show output in error
+     -stdout : 1
+
+         - ls 1> /dev/null: hide normal output but, show output in error.
+     -stderr : 2
+          -lss 2> /dev/null: hide error and show output in right command.
+ls 2> /dev/null : show output in right command 
+
+lss > /dev/null 2>&1 : hide everything.
+
+echo $? : it checks command health: 0 means everything is OK.
+ grep "text"
+
+
